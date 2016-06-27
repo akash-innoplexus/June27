@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng="myApp">
+<head>
+  <title>Gadget Bazar</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">  <!-- Bootstrap CSS -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+  <script type="text/javascript" src="http://angular-ui.github.io/ui-router/release/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="script/app.js"></script>
+</head>
+<body>
+  <div ui-view></div>
+
+  <a ui-sref="add">Add</a>
+  <a ui-sref="save">Save</a>
+  <a ui-sref="cancel">Cancel</a>
+  <a ui-sref="update">Update</a>
+  <a ui-sref="brandList">Brand List</a>
+  <a ui-sref="create">Create</a>
+  <a ui-sref="detail">Details</a>
+
+</body>
+</html>
