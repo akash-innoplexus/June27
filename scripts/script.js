@@ -11,5 +11,17 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   .state('home', {
     url: "/home",
     templateUrl: "partials/home.html"
-  });
+    // controller: 'AppController'
+  })
+  .state('home.add', {
+    url: "/add",
+    // views: {
+    //   templateUrl: 'partials/add.html'
+    //   controller: 'myController'
+    // }
+    templateUrl: "partials/add.html",
+    controller: function($scope) {
+
+    }
+  })
 })
