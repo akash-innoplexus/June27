@@ -10,18 +10,20 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
   .state('home', {
     url: "/home",
-    templateUrl: "partials/home.html"
+    templateUrl: "partials/state1.html"
     // controller: 'AppController'
   })
-  .state('home.add', {
-    url: "/add",
+  .state('navbar', {
+    url: "/navbar",
     // views: {
     //   templateUrl: 'partials/add.html'
     //   controller: 'myController'
     // }
-    templateUrl: "partials/add.html",
+    templateUrl: "partials/navbar.html",
     controller: function($scope) {
+    // console.log("this is working");
 
     }
-  })
-})
+  });
+  // .state('home.')
+});
