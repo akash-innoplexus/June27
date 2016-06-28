@@ -13,6 +13,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     templateUrl: "partials/state1.html"
     // controller: 'AppController'
   })
+  
   .state('navbar', {
     url: "/navbar",
     // views: {
@@ -22,6 +23,14 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     templateUrl: "partials/navbar.html",
     controller: function($scope) {
     // console.log("this is working");
+
+    }
+  })
+
+  .state('add', {
+    url: "/search",
+    templateUrl: "partials/search.html",
+    controller: function($scope) {
 
     }
   });
